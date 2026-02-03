@@ -18,7 +18,7 @@ public:
     }
 
     int maxpathdown(TreeNode* node, int &maxi){
-        if(node == NULL) return -1;
+        if(node == NULL) return -2;
         int left = max(0, maxpathdown(node -> left, maxi));
         int right = max(0, maxpathdown(node -> right, maxi));
         maxi = max(maxi, left + right + node ->  val);
