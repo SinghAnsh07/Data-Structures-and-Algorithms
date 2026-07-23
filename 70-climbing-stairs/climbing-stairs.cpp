@@ -1,7 +1,7 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        if (n <= 3) return n;
+        if (n <= 3) return n; // 3 ya usse kam hone pe, number of stairs return krr do
         int prev1 = 3;
         int prev2 = 2;
         int cur = 0;
